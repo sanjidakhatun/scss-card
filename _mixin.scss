@@ -1,0 +1,28 @@
+@mixin mim{
+    padding: 20px;
+    box-shadow: 10px 10px 8px black;
+    background-color: rgb(109, 151, 137);
+    border-radius: 5px;
+    height: 480px;
+    width: 280px;
+    margin: 20px;
+}
+@mixin btn{
+    background-color: rgb(25, 25, 77);
+    padding: 10px 10px;
+    border: 2px solid rgb(143, 143, 182);
+    border-radius: 5px;
+    display: block;
+    margin-top: 20px;
+
+}
+@mixin small{
+    @media screen  and (max-width:600px){
+   @content;
+} 
+}
+@mixin medium{
+    @media screen  and (min-width:601px) and (max-width:1000px){
+     @content;
+    }
+}

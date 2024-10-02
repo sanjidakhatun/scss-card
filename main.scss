@@ -1,0 +1,44 @@
+ @import "mixin";
+ 
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.maincontent{
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    @include small{
+    
+    display: block;
+   margin: 20px 20px;}
+    @include medium{
+        flex-wrap:wrap;  
+        margin: 20px 0;
+        justify-content: center;
+    }
+}
+img{ 
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.box1{
+    @include mim;
+}
+a{
+    @include btn;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(47, 47, 145);
+}
+.title{
+    text-align: center;
+}
+
